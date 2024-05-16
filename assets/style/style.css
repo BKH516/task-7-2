@@ -1,0 +1,286 @@
+body {
+      padding: 0;
+      margin: 0;
+}
+
+/* task-1 */
+
+.section-1 {
+      padding-top: 50px;
+      background-color: black;
+      color: white;
+      background-size: 300% 300%;
+      animation: backgroundAnimation 10s ease infinite;
+      transition: background-color 0.5s ease;
+      position: relative;
+}
+
+.moving-image {
+      position: absolute;
+      transition: transform 1s ease, width 0.5s ease, height 0.5s ease;
+      z-index: 1000;
+}
+
+.section-2 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 100px;
+}
+
+.text {
+      font-size: 50px;
+}
+
+.text-description {
+      font-size: 25px;
+      width: 85%;
+}
+
+.section-1 div img {
+      width: 250px;
+}
+
+.dark-mode {
+      background-color: #333;
+      color: #fff;
+}
+
+.img-all {
+      flex-wrap: wrap;
+      display: flex;
+      background: none;
+      justify-content: center;
+      width: 70%;
+      margin: 0px 25px;
+      overflow: hidden;
+}
+
+.img-all img {
+      cursor: pointer;
+      width: 100px !important;
+      margin: 0px 25px;
+      margin-bottom: 50px;
+}
+
+.img-green {
+      width: 100px !important;
+}
+ 
+@keyframes backgroundAnimation {
+      0% {
+            background-position: 0% 50%;
+      }
+
+      25% {
+            background-position: 25% 50%;
+      }
+
+      50% {
+            background-position: 50% 50%;
+      }
+
+      75% {
+            background-position: 75% 50%;
+      }
+
+      100% {
+            background-position: 100% 50%;
+      }
+}
+
+/* task-1 */
+
+/* task-2 */
+.section-task-2 {
+      border: 5px solid rgb(164, 251, 98);
+      height: 400px;
+}
+
+.moon {
+      width: 3%;
+      height: 10%;
+      position: relative;
+      margin: 50px 0px 0px 50px;
+}
+
+.moon i {
+      position: absolute;
+      cursor: pointer;
+      left: 20%;
+      top: 50%;
+}
+
+.text-task-2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+
+.text-task-2 h1 {
+      font-size: 40px;
+}
+
+.text-p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.p {
+      font-size: 20px;
+      width: 60%;
+      text-align: center;
+}
+
+/* task-2 */
+
+/* task-3 */
+/* section-mune */
+.section-mune {
+      background-color: #7e7e7e;
+      padding: 100px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.div-mune div {
+      width: 100%;
+      font-size: 20px;
+      margin: 50px 0;
+      padding: 15px 25px;
+      background-color: #def4cd;
+}
+
+.accordion {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+}
+
+.accordion-item {
+      background-color: #def4cd;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+}
+
+.accordion-header {
+      width: 100%;
+      background-color: #def4cd;
+      border: none;
+      outline: none;
+      padding: 15px;
+      text-align: left;
+      font-size: 18px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.accordion-header i {
+      transition: transform 0.3s;
+}
+
+.accordion-header.active i {
+      transform: rotate(180deg);
+}
+
+.accordion-content {
+      display: none;
+      padding: 15px;
+      background-color: #f9f9f9;
+      border-top: 1px solid #ccc;
+}
+
+.accordion-content p {
+      margin: 0;
+}
+/* section-mune */
+/* task-3 */
+
+/* task-4 */
+.rating-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 0;
+      background-color: #0a3d62;
+  }
+  
+  .rating-container {
+      background-color: #1e3799;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      color: white;
+  }
+  
+  .stars {
+      display: flex;
+      justify-content: center;
+      margin: 10px 0;
+  }
+  
+  .star {
+      font-size: 2rem;
+      color: #f1c40f;
+      cursor:pointer;}
+      .rating-text {
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+/* task-4 */
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
+      .section-1, .section-2, .section-task-2, .section-mune, .rating-section {
+          padding: 0 20px;
+      }
+  
+      .text, .text-task-2 h1, .div-mune div, .rating-text {
+          font-size: 30px;
+      }
+  
+      .text-description, .p {
+          font-size: 18px;
+          width: 100%;
+      }
+  
+      .section-1 div img, .img-all img, .img-green {
+          width: 80px !important;
+      }
+  
+      .moon {
+          width: 10%;
+          height: 20%;
+      }
+  
+      .accordion {
+          max-width: 100%;
+      }
+  }
+  
+  @media (max-width: 480px) {
+      .text, .text-task-2 h1, .div-mune div, .rating-text {
+          font-size: 20px;
+      }
+  
+      .text-description, .p {
+          font-size: 16px;
+      }
+  
+      .section-1 div img, .img-all img, .img-green {
+          width: 60px !important;
+      }
+  
+      .moon {
+          width: 15%;
+          height: 30%;
+      }
+  }
