@@ -239,7 +239,7 @@ body {
 
 @media (max-width: 768px) {
       .section-1, .section-2, .section-task-2, .section-mune, .rating-section {
-          padding: 0 20px;
+          padding: 10px ;
       }
   
       .text, .text-task-2 h1, .div-mune div, .rating-text {
