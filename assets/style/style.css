@@ -98,10 +98,9 @@ body {
 }
 
 .moon {
-      width: 3%;
-      height: 10%;
       position: relative;
-      margin: 50px 0px 0px 50px;
+      width: 20%;
+    height: 30%;
 }
 
 .moon i {
@@ -252,10 +251,12 @@ body {
           width: 100%;
       }
   
-      .section-1 div img, .img-all img, .img-green {
-          width: 80px !important;
+      .section-2 div img {
+          width: 125px !important;
       }
-  
+      .img-all img, .img-green{
+            width: 50px !important;
+      }
       .moon {
           width: 10%;
           height: 20%;
